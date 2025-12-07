@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_12/app_bar.dart';
+import 'package:flutter_application_12/review_details.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -32,16 +33,7 @@ class _HomePageState extends State<HomePage> {
 
             SizedBox(height: 20),
 
-            Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    height: 50,
-                    color: Colors.red,
-                  ),
-                ),
-              ],
-            ),
+            ReviewDetails()
           ],
         ),
       ),
